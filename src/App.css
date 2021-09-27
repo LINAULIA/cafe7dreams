@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-size: cover;
+}
+
+.body {
+  background-color: #060707;
 }
 
 .App-logo {
@@ -24,15 +29,44 @@
   color: white;
 }
 
+.button {
+  background-color: rgb(252, 247, 0);
+  color: #004568;
+  border-radius: 50%;
+  font-size: medium;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.gambar {
+  width: 890px;
+  height: 500px;
+  border: groove rgb(0, 0, 0);
+  border-width: 10px;
+  margin: auto
+}
+
+.judul {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 1px;
+  padding-top: 0%;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+
 }
