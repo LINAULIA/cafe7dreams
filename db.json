@@ -1,65 +1,97 @@
 {
     "data": [
       {
-        "name": "Samsung",
-        "price": "Rp. 3000.000",
-        "url": "https://i.postimg.cc/vH4ksVxt/samsung.jpg",
+        "food": "Gimbab",
+        "fprice": "Rp. 35.000",
+        "furl": "https://i.postimg.cc/DS9BTVJ9/gimbap.jpg",
         "lname": "ROG",
         "lprice":"Rp. 50.000.000",
         "lurl": "https://i.postimg.cc/WDhK7417/rog.jpg"
       },
       {
-        "name": "Iphone",
-        "price": "Rp. 8000.000",
-        "url": "https://i.postimg.cc/SnZ389ks/iphone.jpg",
+        "food": "Tteokbokki",
+        "fprice": "Rp. 25.000",
+        "furl": "https://i.postimg.cc/sMQwqfXP/tteokbokki.jpg",
         "lname": "Asus",
         "lprice":"Rp. 8.000.000",
         "lurl": "https://i.postimg.cc/0bnBRS6f/asus.png"
       },
       {
-        "name": "Oppo",
-        "price": "Rp. 2000.000",
-        "url": " https://i.postimg.cc/tnh8Vm4Q/oppo.jpg",
+        "food": "Jajangmyeon",
+        "fprice": "Rp. 27.000",
+        "furl": " https://i.postimg.cc/v4NttJt1/jajangmyeon.jpg",
         "lname": "Lenovo",
         "lprice":"Rp. 4.000.000",
         "lurl": "https://i.postimg.cc/06MvPc90/lenovolepi.jpg"
       },
       {
-        "name": "Xiaomi",
-        "price": "1.800.000",
-        "url": "https://i.postimg.cc/NySnCwyv/xiaomi.png",
+        "food": "Japchae",
+        "fprice": "31.000",
+        "furl": "https://i.postimg.cc/FdmpYjxG/japchae.jpg",
         "lname": "LG",
         "lprice":"Rp. 5.000.000",
         "lurl": "https://i.postimg.cc/3WgKkSmL/lg.jpg"
       },
       {
-        "name": "Realme",
-        "price": "Rp. 3000.000",
-        "url": "https://i.postimg.cc/sv4tj8L5/realme.jpg",
+        "food": "Mozarella",
+        "fprice": "Rp. 35.000",
+        "furl": "https://i.postimg.cc/FYRxcr35/mozarela.jpg",
         "lname": "Acer",
         "lprice":"Rp. 4.500.000",
         "lurl": "https://i.postimg.cc/Wd4jfsKK/acer.jpg"
       },
       {
-        "name": "Huawei",
-        "price": "Rp. 9000.000",
-        "url": "https://i.postimg.cc/XrNtpLMm/huawei.jpg",
+        "food": "Maeundakbal",
+        "fprice": "Rp. 32.000",
+        "furl": "https://i.postimg.cc/dLQfHKrn/maeundakbal.jpg",
         "lname": "Apple",
         "lprice":"Rp. 10.000.000",
         "lurl": "https://i.postimg.cc/JDHfRhwh/apple.jpg"
       },
       {
-        "name": "Vivo",
-        "price": "Rp. 3000.000",
-        "url": " https://i.postimg.cc/crSpNZFs/vivo.jpg",
+        "food": "Raboki",
+        "fprice": "Rp. 21.000",
+        "furl": " https://i.postimg.cc/zLHStxxx/raboki.jpg",
         "lname": "HP",
         "lprice":"Rp. 4.000.000",
         "lurl": "https://i.postimg.cc/QKpxsSky/hp.jpg"
       },
       {
-        "name": "Lenovo",
-        "price": "2000.000",
-        "url": "https://i.postimg.cc/p5NgrtxJ/lenovohp.jpg",
+        "food": "Kimchi Pancake",
+        "fprice": "Rp. 35.000",
+        "furl": "https://i.postimg.cc/14BCNY2F/kimchipancake.jpg",
+        "lname": "Dell",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+      },
+      {
+        "food": "Tokebi",
+        "fprice": "23.000",
+        "furl": "https://i.postimg.cc/R3tp6CxC/tokebi.jpg",
+        "lname": "Dell",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+      },
+      {
+        "food": "Patbingsoo",
+        "fprice": "32.000",
+        "furl": "https://i.postimg.cc/yWHtRRNM/patbingsoo.jpg",
+        "lname": "Dell",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+      },
+      {
+        "food": "Kimchi Sujebi",
+        "fprice": "35.000",
+        "furl": "https://i.postimg.cc/YvZyCGVy/kimchisujebi.jpg",
+        "lname": "Dell",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+      },
+      {
+        "food": "Jajangmyeon",
+        "fprice": "25.000",
+        "furl": "https://i.postimg.cc/v4NttJt1/jajangmyeon.jpg",
         "lname": "Dell",
         "lprice":"Rp. 5.000.000",
         "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"

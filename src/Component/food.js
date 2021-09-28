@@ -108,11 +108,11 @@ export default function Food() {
                     }}
                     component="img"
                     className={classes.media}
-                    image={value.url}
+                    image={value.furl}
                   />
                   <CardContent>
-                  <Typography style={{fontWeight:"bold"}}>{value.name}</Typography>
-                    <Typography>Harga : {value.price} </Typography>
+                  <Typography style={{fontWeight:"bold"}}>{value.food}</Typography>
+                    <Typography>Harga : {value.fprice} </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
