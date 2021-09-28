@@ -1,0 +1,68 @@
+{
+    "data": [
+      {
+        "name": "Samsung",
+        "price": "Rp. 3000.000",
+        "url": "https://i.postimg.cc/vH4ksVxt/samsung.jpg",
+        "lname": "ROG",
+        "lprice":"Rp. 50.000.000",
+        "lurl": "https://i.postimg.cc/WDhK7417/rog.jpg"
+      },
+      {
+        "name": "Iphone",
+        "price": "Rp. 8000.000",
+        "url": "https://i.postimg.cc/SnZ389ks/iphone.jpg",
+        "lname": "Asus",
+        "lprice":"Rp. 8.000.000",
+        "lurl": "https://i.postimg.cc/0bnBRS6f/asus.png"
+      },
+      {
+        "name": "Oppo",
+        "price": "Rp. 2000.000",
+        "url": " https://i.postimg.cc/tnh8Vm4Q/oppo.jpg",
+        "lname": "Lenovo",
+        "lprice":"Rp. 4.000.000",
+        "lurl": "https://i.postimg.cc/06MvPc90/lenovolepi.jpg"
+      },
+      {
+        "name": "Xiaomi",
+        "price": "1.800.000",
+        "url": "https://i.postimg.cc/NySnCwyv/xiaomi.png",
+        "lname": "LG",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/3WgKkSmL/lg.jpg"
+      },
+      {
+        "name": "Realme",
+        "price": "Rp. 3000.000",
+        "url": "https://i.postimg.cc/sv4tj8L5/realme.jpg",
+        "lname": "Acer",
+        "lprice":"Rp. 4.500.000",
+        "lurl": "https://i.postimg.cc/Wd4jfsKK/acer.jpg"
+      },
+      {
+        "name": "Huawei",
+        "price": "Rp. 9000.000",
+        "url": "https://i.postimg.cc/XrNtpLMm/huawei.jpg",
+        "lname": "Apple",
+        "lprice":"Rp. 10.000.000",
+        "lurl": "https://i.postimg.cc/JDHfRhwh/apple.jpg"
+      },
+      {
+        "name": "Vivo",
+        "price": "Rp. 3000.000",
+        "url": " https://i.postimg.cc/crSpNZFs/vivo.jpg",
+        "lname": "HP",
+        "lprice":"Rp. 4.000.000",
+        "lurl": "https://i.postimg.cc/QKpxsSky/hp.jpg"
+      },
+      {
+        "name": "Lenovo",
+        "price": "2000.000",
+        "url": "https://i.postimg.cc/p5NgrtxJ/lenovohp.jpg",
+        "lname": "Dell",
+        "lprice":"Rp. 5.000.000",
+        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+      }
+    ]
+  }
