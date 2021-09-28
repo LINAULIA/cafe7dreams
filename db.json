@@ -26,7 +26,7 @@
       },
       {
         "food": "Japchae",
-        "fprice": "31.000",
+        "fprice": "Rp. 31.000",
         "furl": "https://i.postimg.cc/FdmpYjxG/japchae.jpg",
         "lname": "LG",
         "lprice":"Rp. 5.000.000",
@@ -66,7 +66,7 @@
       },
       {
         "food": "Tokebi",
-        "fprice": "23.000",
+        "fprice": "Rp. 23.000",
         "furl": "https://i.postimg.cc/R3tp6CxC/tokebi.jpg",
         "lname": "Dell",
         "lprice":"Rp. 5.000.000",
@@ -74,7 +74,7 @@
       },
       {
         "food": "Patbingsoo",
-        "fprice": "32.000",
+        "fprice": "Rp. 32.000",
         "furl": "https://i.postimg.cc/yWHtRRNM/patbingsoo.jpg",
         "lname": "Dell",
         "lprice":"Rp. 5.000.000",
@@ -82,7 +82,7 @@
       },
       {
         "food": "Kimchi Sujebi",
-        "fprice": "35.000",
+        "fprice": "Rp. 35.000",
         "furl": "https://i.postimg.cc/YvZyCGVy/kimchisujebi.jpg",
         "lname": "Dell",
         "lprice":"Rp. 5.000.000",
@@ -90,7 +90,7 @@
       },
       {
         "food": "Jajangmyeon",
-        "fprice": "25.000",
+        "fprice": "Rp. 25.000",
         "furl": "https://i.postimg.cc/v4NttJt1/jajangmyeon.jpg",
         "lname": "Dell",
         "lprice":"Rp. 5.000.000",
