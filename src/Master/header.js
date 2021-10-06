@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { Toolbar } from "@material-ui/core";
+import "./header.css";
 
 const styles = makeStyles((theme) => ({
   bar: {
@@ -15,6 +16,8 @@ const styles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
+    float: "right",
+    marginBlockEnd: "0px"
   },
 }));
 
@@ -38,7 +41,7 @@ export default function Footer() {
   return (
     <ThemeContext.Provider value={valueTheme}>
       <div style={{ backgroundColor: valueTheme.background}}>
-        <Toolbar position="sticky" className={classes.bar}>
+        <Toolbar className={classes.bar}>
           <div >
             <Button className={classes.btn}>
               <Link

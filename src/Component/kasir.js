@@ -64,7 +64,7 @@ class Kasir extends React.Component {
     const { laptop, handphone, totalTagihan } = this.state;
     return (
       <div className="container">
-        <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> SELAMAT DATANG DI L&W ELECTRONIC, PUSAT STORE HP DAN LAPTOP TERBESAR, DAN TERMURAH SEJAGAT RAYA </marquee>
+        <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
         <div className="titleWrapper">
           <center>
             <p className="judul">Isi Data Pesanan</p>
