@@ -4,97 +4,97 @@
         "food": "Gimbab",
         "fprice": "Rp. 35.000",
         "furl": "https://i.postimg.cc/DS9BTVJ9/gimbap.jpg",
-        "lname": "ROG",
-        "lprice":"Rp. 50.000.000",
-        "lurl": "https://i.postimg.cc/WDhK7417/rog.jpg"
+        "drink": "Orange Smoothie",
+        "dprice":"Rp. 20.000",
+        "durl": "https://i.postimg.cc/Kj9vcn3H/orangesmoothie.jpg"
       },
       {
         "food": "Tteokbokki",
         "fprice": "Rp. 25.000",
         "furl": "https://i.postimg.cc/sMQwqfXP/tteokbokki.jpg",
-        "lname": "Asus",
-        "lprice":"Rp. 8.000.000",
-        "lurl": "https://i.postimg.cc/0bnBRS6f/asus.png"
+        "drink": "Strawberry Latte",
+        "dprice":"Rp. 30.000",
+        "durl": "https://i.postimg.cc/V6X6L6P4/strawberrylatte.jpg"
       },
       {
         "food": "Jajangmyeon",
         "fprice": "Rp. 27.000",
         "furl": " https://i.postimg.cc/v4NttJt1/jajangmyeon.jpg",
-        "lname": "Lenovo",
-        "lprice":"Rp. 4.000.000",
-        "lurl": "https://i.postimg.cc/06MvPc90/lenovolepi.jpg"
+        "drink": "Strawberry Matcha Latte",
+        "dprice":"Rp. 40.000",
+        "durl": "https://i.postimg.cc/m2gbKVkm/strawberrymatchalatte.jpg"
       },
       {
         "food": "Japchae",
         "fprice": "Rp. 31.000",
         "furl": "https://i.postimg.cc/FdmpYjxG/japchae.jpg",
-        "lname": "LG",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/3WgKkSmL/lg.jpg"
+        "drink": "Strawberry Cheese Cake Latte",
+        "dprice":"Rp. 45.000",
+        "durl": "https://i.postimg.cc/RZxgNptR/strawberrycheesecakelatte.jpg"
       },
       {
         "food": "Mozarella",
         "fprice": "Rp. 35.000",
         "furl": "https://i.postimg.cc/FYRxcr35/mozarela.jpg",
-        "lname": "Acer",
-        "lprice":"Rp. 4.500.000",
-        "lurl": "https://i.postimg.cc/Wd4jfsKK/acer.jpg"
+        "drink": "Ice Americano",
+        "dprice":"Rp. 20.000",
+        "durl": "https://i.postimg.cc/YCMbBYzH/iceamericano3.jpg "
       },
       {
         "food": "Maeundakbal",
         "fprice": "Rp. 32.000",
         "furl": "https://i.postimg.cc/dLQfHKrn/maeundakbal.jpg",
-        "lname": "Apple",
-        "lprice":"Rp. 10.000.000",
-        "lurl": "https://i.postimg.cc/JDHfRhwh/apple.jpg"
+        "drink": "Tiramisu Latte",
+        "dprice":"Rp. 35.000",
+        "durl": "https://i.postimg.cc/3NdLSzSy/tiramisulatte.jpg"
       },
       {
         "food": "Raboki",
         "fprice": "Rp. 21.000",
         "furl": " https://i.postimg.cc/zLHStxxx/raboki.jpg",
-        "lname": "HP",
-        "lprice":"Rp. 4.000.000",
-        "lurl": "https://i.postimg.cc/QKpxsSky/hp.jpg"
+        "drink": "Cherry Coke",
+        "dprice":"Rp. 20.000",
+        "durl": "https://i.postimg.cc/prdk63TN/cherry-coke.jpg"
       },
       {
         "food": "Kimchi Pancake",
         "fprice": "Rp. 35.000",
         "furl": "https://i.postimg.cc/14BCNY2F/kimchipancake.jpg",
-        "lname": "Dell",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+        "drink": "Orange Matcha Latte",
+        "dprice":"Rp. 30.000",
+        "durl": "https://i.postimg.cc/63pdWnNn/orange-matcha-latte.jpg"
       },
       {
         "food": "Tokebi",
         "fprice": "Rp. 23.000",
         "furl": "https://i.postimg.cc/R3tp6CxC/tokebi.jpg",
-        "lname": "Dell",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+        "drink": "Sweet Bean Green Tea Latte",
+        "dprice":"Rp. 25.000",
+        "durl": "https://i.postimg.cc/fLP0MPCQ/sweetbeangreentealatte.png"
       },
       {
         "food": "Patbingsoo",
         "fprice": "Rp. 32.000",
         "furl": "https://i.postimg.cc/yWHtRRNM/patbingsoo.jpg",
-        "lname": "Dell",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+        "drink": "Orange ade",
+        "dprice":"Rp. 20.000",
+        "durl": "https://i.postimg.cc/P5NbnmTD/orangeade.jpg"
       },
       {
         "food": "Kimchi Sujebi",
         "fprice": "Rp. 35.000",
         "furl": "https://i.postimg.cc/YvZyCGVy/kimchisujebi.jpg",
-        "lname": "Dell",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+        "drink": "Mango Smoothie",
+        "dprice":"Rp. 10.000",
+        "durl": "https://i.postimg.cc/fLfRp4zZ/mangosmoothietapiocapearl.jpg"
       },
       {
         "food": "Jajangmyeon",
         "fprice": "Rp. 25.000",
         "furl": "https://i.postimg.cc/v4NttJt1/jajangmyeon.jpg",
-        "lname": "Dell",
-        "lprice":"Rp. 5.000.000",
-        "lurl": "https://i.postimg.cc/v48HFr10/dell.jpg"
+        "drink": "Mineral Water",
+        "dprice":"Rp. 5.000",
+        "durl": "https://i.postimg.cc/nV1Xwmr7/water.jpg"
       }
     ]
   }
