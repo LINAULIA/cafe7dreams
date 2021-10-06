@@ -6,25 +6,32 @@ class Kasir extends React.Component {
     super(props);
     this.handleChangeStuff = this.handleChangeStuff.bind(this);
     this.state = {
-      handphone: [
-        ["Samsung", 3000000],
-        ["Iphone", 8000000],
-        ["Oppo", 20000000],
-        ["Xiaomi", 1800000],
-        ["Realme", 3000000],
-        ["Huawei", 9000000],
-        ["Vivo", 3000000],
-        ["Lenovo", 2000000],
+      food: [
+        ["Gimbap", 35.000],
+        ["Tteokbokki", 25.000],
+        ["Jajangmyeon", 27.000],
+        ["Japchae", 31.000],
+        ["Maeundakbal", 32.000],
+        ["Raboki", 21.000],
+        ["Kimchi Pancake", 35.000],
+        ["Tokebi", 23.000],
+        ["Patbingsoo", 32.000],
+        ["Kimchi Sujebi", 35.000],
+        ["Jajangmyeon", 25.000],
       ],
-      laptop: [
-        ["ROG", 50000000],
-        ["Asus", 8000000],
-        ["Lenovo", 4000000],
-        ["LG", 5000000],
-        ["Acer", 4500000],
-        ["Apple", 10000000],
-        ["HP", 4000000],
-        ["Dell", 5000000],
+      drink: [
+        ["Orange Smoothie", 20.000],
+        ["Strawberry Latte", 30.000],
+        ["Strawberry Matcha Latte", 40.000],
+        ["Strawberry Cheese Cake Latte", 45.000],
+        ["Ice Americano", 20.000],
+        ["Tiramisu Latte", 35.000],
+        ["Cherry Coke", 20.000],
+        ["Orange Matcha Latte", 30.000],
+        ["Sweet Bean Green Tea Latte", 25.000],
+        ["Orange Ade", 20.000],
+        ["Mango Smoothie", 20.000],
+        ["Mineral Water", 5.000],
       ],
       produk: {
         produk1: 0,
@@ -61,13 +68,13 @@ class Kasir extends React.Component {
   }
 
   render() {
-    const { laptop, handphone, totalTagihan } = this.state;
+    const { food, drink, totalTagihan } = this.state;
     return (
       <div className="container">
         <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
         <div className="titleWrapper">
           <center>
-            <p className="judul">Isi Data Pesanan</p>
+            <p className="judul" style={{ color:"#722ed1", fontFamily:"Arial", fontWeight: "bold" }}>Isi Data Pesanan</p>
             </center>
         </div>
           <div className="inputWrapper">
@@ -77,9 +84,11 @@ class Kasir extends React.Component {
             <div>
               <center>
               <input style={{
+                  background: "#efdbff",
                   color: "#4B0082",
                   margin: "auto",
-                  height: "20px",
+                  height: "40px",
+                  border: "#9254de",
                   fontSize: "15px"
                 }}
                 placeholder="Nama"
@@ -95,9 +104,11 @@ class Kasir extends React.Component {
             <div>
               <center>
               <input style={{
+                  background: "#efdbff",
                   color: "#4B0082",
                   margin: "auto",
-                  height: "20px",
+                  height: "40px",
+                  border: "#9254de",
                   fontSize: "15px"
                 }}
                 placeholder="Alamat"
@@ -114,10 +125,12 @@ class Kasir extends React.Component {
               <center>
               <input
               style={{
-                color: "#4B0082",
-                margin: "auto",
-                height: "20px",
-                fontSize: "15px"
+                background: "#efdbff",
+                  color: "#4B0082",
+                  margin: "auto",
+                  height: "40px",
+                  border: "#9254de",
+                  fontSize: "15px"
               }}
                 placeholder="No Hp"
                 size="50"
@@ -134,15 +147,20 @@ class Kasir extends React.Component {
               <div className="sarapan">
                 <br />
                 <center>
-                <label >Pilih Handphone :    </label>
+                <label >Pilih Makanan :    </label>
                 <select
                   onChange={this.handleChangeStuff}
                   name="produk1"
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", background: "#efdbff",
+                  color: "#4B0082",
+                  margin: "auto",
+                  height: "40px",
+                  border: "#9254de",
+                  fontSize: "15px" }}
                 >
-                  <option value="0">Handphone</option>
+                  <option value="0">Makanan</option>
                   <Fragment>
-                    {handphone.map((makanan) => {
+                    {food.map((makanan) => {
                       return <option value={makanan[1]}>{makanan[0]}</option>;
                     })}
                   </Fragment>
@@ -150,15 +168,20 @@ class Kasir extends React.Component {
                 </center>
                 <br />
                 <center>
-                <label >Pilih Laptop :      </label>
+                <label >Pilih Minuman :      </label>
                 <select
                   onChange={this.handleChangeStuff}
                   name="produk2"
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", background: "#efdbff",
+                  color: "#4B0082",
+                  margin: "auto",
+                  height: "40px",
+                  border: "#9254de",
+                  fontSize: "15px" }}
                 >
-                  <option value="0">Laptop</option>
+                  <option value="0">Minuman</option>
                   <Fragment>
-                    {laptop.map((makanan) => {
+                    {drink.map((makanan) => {
                       return <option value={makanan[1]}>{makanan[0]}</option>;
                     })}
                   </Fragment>
