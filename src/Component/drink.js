@@ -47,7 +47,7 @@ const styles = makeStyles((theme) => ({
     },
   },
 }));
-export default function Food() {
+export default function Drink() {
   const classes = styles();
   const [valueInput, setValueInput] = useState({
     name: "",
@@ -74,14 +74,14 @@ export default function Food() {
   return (
     <div>
       <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
-      <div style={{ marginTop: 20 }}>
+           <div style={{ marginTop: 20 }}>
       <center>
       <input className="search"
               onChange={(event) => handleIdPembelian(event, "name")}
               name="idPembelian"
               value={valueInput.name}
               style={{ color: "#6e0234"}}
-              placeholder="Masukkan Nama Merk"
+              placeholder="Masukkan Nama Minuman"
             />
       <button type="submit" class="searchButton">
       <FontAwesomeIcon icon={faSearch} />
@@ -105,11 +105,11 @@ export default function Food() {
                     }}
                     component="img"
                     className={classes.media}
-                    image={value.lurl}
+                    image={value.durl}
                   />
                   <CardContent>
-                  <Typography style={{fontWeight:"bold"}}>{value.lname}</Typography>
-                    <Typography>Harga : {value.lprice} </Typography>
+                  <Typography style={{fontWeight:"bold"}}>{value.drink}</Typography>
+                    <Typography>Harga : {value.dprice} </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
