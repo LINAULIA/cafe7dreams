@@ -9,6 +9,7 @@ import "./header.css";
 const styles = makeStyles((theme) => ({
   bar: {
     marginTop: "0px",
+    marginLeft: "60%",
   },
   line: {
     height: "5px",
@@ -17,7 +18,6 @@ const styles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
     float: "right",
-    marginBlockEnd: "0px"
   },
 }));
 
