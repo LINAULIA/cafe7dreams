@@ -64,6 +64,7 @@ export default function Drink() {
     fetch("  http://localhost:3333/data")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setData(data);
       })
       .catch((err) => {

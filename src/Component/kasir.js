@@ -7,31 +7,31 @@ class Kasir extends React.Component {
     this.handleChangeStuff = this.handleChangeStuff.bind(this);
     this.state = {
       food: [
-        ["Gimbap", 35.000],
-        ["Tteokbokki", 25.000],
-        ["Jajangmyeon", 27.000],
-        ["Japchae", 31.000],
-        ["Maeundakbal", 32.000],
-        ["Raboki", 21.000],
-        ["Kimchi Pancake", 35.000],
-        ["Tokebi", 23.000],
-        ["Patbingsoo", 32.000],
-        ["Kimchi Sujebi", 35.000],
-        ["Jajangmyeon", 25.000],
+        ["Gimbap", 35000],
+        ["Tteokbokki", 25000],
+        ["Jajangmyeon", 27000],
+        ["Japchae", 31000],
+        ["Maeundakbal", 32000],
+        ["Raboki", 21000],
+        ["Kimchi Pancake", 35000],
+        ["Tokebi", 23000],
+        ["Patbingsoo", 32000],
+        ["Kimchi Sujebi", 35000],
+        ["Jajangmyeon", 25000],
       ],
       drink: [
-        ["Orange Smoothie", 20.000],
-        ["Strawberry Latte", 30.000],
-        ["Strawberry Matcha Latte", 40.000],
-        ["Strawberry Cheese Cake Latte", 45.000],
-        ["Ice Americano", 20.000],
-        ["Tiramisu Latte", 35.000],
-        ["Cherry Coke", 20.000],
-        ["Orange Matcha Latte", 30.000],
-        ["Sweet Bean Green Tea Latte", 25.000],
-        ["Orange Ade", 20.000],
-        ["Mango Smoothie", 20.000],
-        ["Mineral Water", 5.000],
+        ["Orange Smoothie", 20000],
+        ["Strawberry Latte", 30000],
+        ["Strawberry Matcha Latte", 40000],
+        ["Strawberry Cheese Cake Latte", 45000],
+        ["Ice Americano", 20000],
+        ["Tiramisu Latte", 35000],
+        ["Cherry Coke", 20000],
+        ["Orange Matcha Latte", 30000],
+        ["Sweet Bean Green Tea Latte", 25000],
+        ["Orange Ade", 20000],
+        ["Mango Smoothie", 20000],
+        ["Mineral Water", 5000],
       ],
       produk: {
         produk1: 0,
@@ -79,7 +79,7 @@ class Kasir extends React.Component {
         </div>
           <div className="inputWrapper">
             <center>
-            <label >Masukkan Nama:</label>
+            <label >Masukkan Nama: </label>
             </center>
             <div>
               <center>
