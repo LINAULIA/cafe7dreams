@@ -72,7 +72,7 @@ export default function Drink() {
   }, []);
   return (
     <div style={{background:"#E8DFD8"}}>
-      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="rgba(255,0,0,30)" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
+      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
       <div style={{ marginTop: 20 }}>
       <center>
       <input className="search"
