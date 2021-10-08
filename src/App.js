@@ -12,13 +12,13 @@ const styles = makeStyles((theme) => ({
 }));
 const themes = {
   light: {
-    background: "#f0e6f7",
-    color: "#330852",
+    background: "#E8DFD8",
+    color: "#F8F8FF",
     backgroundSize: "100%",
   },
   dark: {
-    background: "#808080",
-    color: "#F8F8FF",
+    background: "#c7a68f",
+    color: "#330852",
     backgroundSize: "100%",
   },
 };
@@ -33,8 +33,8 @@ export default function Header() {
     <body>
     <ThemeContext.Provider value={valueTheme}>
       <div style={{ backgroundColor: valueTheme.background, backgroundSize: "100%"  }}>
-      <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream</marquee>
-            <button
+      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream</marquee>
+            <button style={{backgroundColor:"#201710"}}
                 className="button"
                 onClick={() =>
                   setValueTheme(
@@ -42,25 +42,29 @@ export default function Header() {
                   )
                 }
               >
-              <FontAwesomeIcon icon={faHome} />
+              <FontAwesomeIcon icon={faHome} style={{color:"#E8DFD8"}}/>
               </button>
             
           <center>
           <div className="judul">
-            <h3>Cafe 7 Dream</h3>
+            <h3 style={{fontFamily:'Fantasy'}}>Cafe 7 Dream</h3>          
             <div className="gambar">
               <center>
               <Link to="/home">
                 <img src={foodImage} style={{ height: "500px"  }} />
-              </Link>
+              </Link> 
               </center>
+            </div>
+          <div class="box">
+          <p style={{fontFamily:"fantasy", fontSize:"30px"}}>Contact Us :</p>
+            <p style={{fontSize:"20px"}}>Phone : +62 877 7876 9808</p>
+            <p style={{fontSize:"20px"}}>Email : 7dreamscafe@gmail.com</p>
+            <p style={{fontSize:"20px"}}>Instagram : @cafe7dreams</p>
             </div>
           </div>
           </center>
-          <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Credits by Lina Aulia & Winda Naibaho </marquee>
+          <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Credits by Lina Aulia & Winda Naibaho </marquee>
           </div>
-          <h3>
-          </h3>
     </ThemeContext.Provider>
     </body>
   );
