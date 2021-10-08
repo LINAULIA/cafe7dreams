@@ -4,31 +4,29 @@ import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { Toolbar } from "@material-ui/core";
-import "./header.css";
+
 
 const styles = makeStyles((theme) => ({
   bar: {
     marginTop: "0px",
-    marginLeft: "60%",
+    float:"right",
   },
   line: {
-    height: "5px",
-    backgroundColor: "#483D8B",
+    height: "65px",
   },
   link: {
     textDecoration: "none",
-    float: "right",
   },
 }));
 
 const themes = {
   light: {
-    background: "#8B008B",
-    color: "#FFFAFA",
+    background: "#885f43",
+    color: "#201710",
   },
   dark: {
-    background: "#006400",
-    color: "#FFFAFA",
+    background: "#201710",
+    color: "#faf8f6",
   },
 };
 
@@ -41,13 +39,13 @@ export default function Footer() {
   return (
     <ThemeContext.Provider value={valueTheme}>
       <div style={{ backgroundColor: valueTheme.background}}>
-        <Toolbar className={classes.bar}>
+        <Toolbar position="sticky" className={classes.bar}>
           <div >
             <Button className={classes.btn}>
               <Link
                 to="/"
                 className={classes.link}
-                style={{ color: valueTheme.color, fontWeight: "bold" }}
+                style={{color: valueTheme.color, fontWeight: "bold"}}
               >
                 | HOME |
               </Link>
@@ -57,7 +55,7 @@ export default function Footer() {
               <Link
                 to="/food"
                 className={classes.link}
-                style={{ color: valueTheme.color, fontWeight: "bold" }}
+                style={{ color: valueTheme.color, fontWeight: "bold"}}
               >
                 | Food |
               </Link>
@@ -67,7 +65,7 @@ export default function Footer() {
               <Link
                 to="/drink"
                 className={classes.link}
-                style={{ color: valueTheme.color, fontWeight: "bold" }}
+                style={{ color: valueTheme.color, fontWeight: "bold"}}
               >
                 | Drink |
               </Link>
@@ -77,13 +75,13 @@ export default function Footer() {
               <Link
                 to="/kasir"
                 className={classes.link}
-                style={{ color: valueTheme.color, fontWeight: "bold" }}
+                style={{ color: valueTheme.color, fontWeight: "bold"}}
               >
                 | BUY |
               </Link>
             </Button>
             <Button 
-              style={{ color: valueTheme.color, fontWeight: "bold" }}
+              style={{ color: valueTheme.color, fontWeight: "bold"}}
               className="Button"
               onClick={() =>
                 setValueTheme(
