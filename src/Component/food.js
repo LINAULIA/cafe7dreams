@@ -21,7 +21,7 @@ const styles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     textAlign: "center",
     paddingBottom: theme.spacing(2),
-    backgroundColor: "white",
+    backgroundColor: "rgba(0,0,0,.1)",
     ["@media (max-width:600px)"]: {
       flexDirection: "column",
     },
@@ -32,7 +32,6 @@ const styles = makeStyles((theme) => ({
   grid: {
     display: "flex",
     justifyContent: "flex-start",
-    backgroundColor: "white",
     direction: "row",
     margin: "auto",
     marginBottom: theme.spacing(2),
@@ -75,16 +74,16 @@ export default function Food() {
       });
   }, []);
   return (
-    <div>
-      <marquee style={{ fontWeight: "bold" }} bgcolor="FFF300" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
+    <div style={{background:"#E8DFD8"}}>
+      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream  </marquee>
       <div style={{ marginTop: 20 }}>
       <center>
       <input className="search"
               onChange={(event) => handleIdPembelian(event, "name")}
               name="idPembelian"
               value={valueInput.name}
-              style={{  color: "#6e0234"}}
-            placeholder= "Masukkan Nama Merk" 
+              style={{ color: "#6e0234"}}
+              placeholder="Masukkan Nama Minuman"
             />
       <button type="submit" class="searchButton">
       <FontAwesomeIcon icon={faSearch} />
@@ -98,13 +97,14 @@ export default function Food() {
         <Grid container md={11} spacing={4} className={classes.grid}>
           {data.map((value) => (
             <Grid item key={value.name} md={3}>
-              <Card className={classes.paper}>
+              <Card className={classes.paper} style={{borderRadius: "0.5rem",
+                      boxShadow:"var(--box-shadow)", overflow:"hidden"}}>
                 <CardActionArea>
                   <CardMedia
                     style={{
-                      height: "150px",
+                      height: "200px",
                       margin: "auto",
-                      paddingTop: "5%",
+                      //paddingTop: "5%",
                     }}
                     component="img"
                     className={classes.media}
