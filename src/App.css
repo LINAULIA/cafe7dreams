@@ -46,8 +46,8 @@
 }
 
 .gambar {
-  width: 890px;
-  height: 500px;
+  width: 910px;
+  height: 600px;
   border: groove rgb(0, 0, 0);
   border-width: 10px;
   margin: auto
@@ -58,6 +58,10 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-bottom: 1px;
   padding-top: 0%;
+}
+
+.box {
+  padding-top: 1%;
 }
 
 @keyframes App-logo-spin {

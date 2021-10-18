@@ -1,5 +1,5 @@
-import { useContext, createContext, useState, useEffect } from "react";
-
+import React, { Component } from "react";
+import axios from "axios";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,115 +9,129 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Modal } from "antd";
+import "antd/dist/antd.css";
 import "./drink.css";
 
-const styles = makeStyles((theme) => ({
-  slider: {
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-  },
-  paper: {
-    margin: theme.spacing(2),
-    justifyContent: "flex-end",
-    textAlign: "center",
-    paddingBottom: theme.spacing(2),
-    backgroundColor: "rgba(0,0,0,.1)",
-    ["@media (max-width:600px)"]: {
-      flexDirection: "column",
-    },
-  },
-  label: {
-    textTransform: "none",
-  },
-  grid: {
-    display: "flex",
-    justifyContent: "flex-start",
-    direction: "row",
-    margin: "auto",
-    marginBottom: theme.spacing(2),
-    ["@media (max-width:600px)"]: {
-      flexDirection: "column",
-    },
-  },
-  button: {
-    padding: "5%",
-    "&:hover": {
-      color: "#4f25c8",
-    },
-  },
-}));
-export default function Drink() {
-  const classes = styles();
-  const [valueInput, setValueInput] = useState({
-    name: "",
-  });
-
-  const handleIdPembelian = (event, type) => {
-    if (type === "name") {
-      setValueInput((prevState) => {
-        return { ...prevState, name: event.target.value };
-      });
-    }
+export default class Drink extends Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+    recipe: [],
+    visible: false,
   };
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch("  http://localhost:3333/data")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setData(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+}
+
+handleButton = (results) => {
+  // alert("Spesifikasi : " + steps);
+  this.setState({
+    visible: true,
+    drink: results.drink,
+    dprice: results.dprice,
+    ddetail: results.ddetail,
+  });
+};
+
+componentDidMount() {
+  axios({
+    method: "get",
+    url: "http://localhost:3000/data",
+    headers: {
+      accept: "*/*",
+    },
+  })
+  .then((data) => {
+    console.log(data.data);
+    this.setState({
+      recipe: data.data,
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+}
+
+render() {
   return (
-    <div style={{background:"#E8DFD8"}}>
-      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream </marquee>
+    <div style={{ backgroundColor: "#845EC2" }}>
+      <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream</marquee>
       <div style={{ marginTop: 20 }}>
-      <center>
-      <input className="search"
-              onChange={(event) => handleIdPembelian(event, "name")}
-              name="idPembelian"
-              value={valueInput.name}
-              style={{ color: "#6e0234"}}
-              placeholder="Masukkan Nama Minuman"
-            />
-      <button type="submit" class="searchButton">
-      <FontAwesomeIcon icon={faSearch} />
-     </button>
-            </center>
-            <div className="marquee" >
-            <center>
-              <h3> ... Mencari data {valueInput.name} ...</h3>
-        </center>
-        </div>
-        <Grid container md={11} spacing={4} className={classes.grid}>
-          {data.map((value) => (
-            <Grid item key={value.name} md={3}>
-              <Card className={classes.paper} style={{borderRadius: "0.5rem",
-                      boxShadow:"var(--box-shadow)", overflow:"hidden"}}>
-                <CardActionArea>
-                  <CardMedia
-                    style={{
-                      height: "200px",
-                      margin: "auto",
-                      //paddingTop: "5%",
-                    }}
-                    component="img"
-                    className={classes.media}
-                    image={value.durl}
-                  />
-                  <CardContent>
-                  <Typography style={{fontWeight:"bold"}}>{value.drink}</Typography>
-                    <Typography>Harga : {value.dprice} </Typography>
+    <center>
+    <input className="search"
+            style={{ color: "#6e0234"}}
+            placeholder="Masukkan Nama Merk"
+          />
+    <button type="submit" class="searchButton">
+    <FontAwesomeIcon icon={faSearch} />
+   </button>
+          </center>
+      <div className="marquee" >
+          <center>
+            <h3> ... Mencari data ...</h3>
+      </center>
+      </div>
+      <Grid container
+                  md={11}
+                  spacing={4}
+                  style={{ margin:"auto", backgroundColor: "#F9F871" }}
+                  direction="row"
+                  justifyContent="flex-start"
+                  alignItems="strech"
+        
+              >
+        <Modal
+          title="Keterangan"
+          centered
+          visible={this.state.visible}
+          onOk={() => this.setState({ visible: false })}
+          onCancel={() => this.setState({ visible: false })}
+          width={500}
+        >
+          <div style={{ textAlign: "center" }}>
+            <p style={{ fontSize: 20, fontWeight: 'bold', fontFamily: 'Segoe UI' }}>{this.state.drink}</p>
+            <p style={{ fontSize: 15, fontFamily: 'Segoe UI' }}>Harga {this.state.fdrink}</p>
+            <p style={{ fontSize: 15, fontFamily: 'Segoe UI' }}>Keterangan {this.state.ddetail}</p>
+          </div>
+        </Modal>
+
+        {this.state.recipe.map((results, index) => {
+          return (
+            <Grid item key={results.drink} md={3}>
+              <Card>
+                <CardActionArea onClick={() => this.handleButton(results)}>
+                  <CardContent style={{ backgroundColor: "#2F4F4F", textAlign: "center", color: "#ededed" }} >
+                                          <CardMedia
+                                                  style={{
+                          height: "150px",
+                          margin: "auto",
+                          paddingTop: "5%",
+                                                      // margin: "1px",
+                                                      // padding: "auto",
+                                                      borderRadius: "8px",
+                                                      // height: "80px",
+                                                      // width: "80px"
+                                                  }}
+                                                  component="img"
+                                                  image={results.durl}
+                                              />
+                                          
+                    <Typography style={{ fontWeight: "bold" }}>
+                      <br/>{results.drink}
+                    </Typography>
+                    <Typography>
+                      Harga : {results.dprice}
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
-          ))}
-        </Grid>
-      </div>
+          );
+        })}
+      </Grid>                
+              <br/><br/><br/><br/>
     </div>
-  );
+    </div>
+          
+  )
+}
 }
