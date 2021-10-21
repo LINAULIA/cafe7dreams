@@ -53,13 +53,13 @@ componentDidMount() {
 
 render() {
   return (
-    <div style={{ backgroundColor: "#845EC2" }}>
+    <div style={{ backgroundColor: "#E8DFD8" }}>
       <marquee style={{ height:"30px",fontWeight: "bold", color:"#FFFAFA" }} bgcolor="#523A28" align ="center" direction ="left" scrollamount="10"> Annyeong Chingu ^_^  Selamat datang di Cafe 7 Dream</marquee>
       <div style={{ marginTop: 20 }}>
     <center>
     <input className="search"
-            style={{ color: "#6e0234"}}
-            placeholder="Masukkan Nama Merk"
+            style={{ color: "#6e0234", height :"50px"}}
+            placeholder="Masukkan Nama Makanan"
           />
     <button type="submit" class="searchButton">
     <FontAwesomeIcon icon={faSearch} />
@@ -73,7 +73,7 @@ render() {
       <Grid container
                   md={11}
                   spacing={4}
-                  style={{ margin:"auto", backgroundColor: "#F9F871" }}
+                  style={{ margin:"auto", backgroundColor: "#E8DFD8" }}
                   direction="row"
                   justifyContent="flex-start"
                   alignItems="strech"
@@ -90,7 +90,7 @@ render() {
           <div style={{ textAlign: "center" }}>
             <p style={{ fontSize: 20, fontWeight: 'bold', fontFamily: 'Segoe UI' }}>{this.state.food}</p>
             <p style={{ fontSize: 15, fontFamily: 'Segoe UI' }}>Harga {this.state.fprice}</p>
-            <p style={{ fontSize: 15, fontFamily: 'Segoe UI' }}>Keterangan {this.state.fdetail}</p>
+            <p style={{ fontSize: 15, fontFamily: 'Segoe UI' }}> {this.state.fdetail}</p>
           </div>
         </Modal>
 
@@ -99,12 +99,12 @@ render() {
             <Grid item key={results.food} md={3}>
               <Card>
                 <CardActionArea onClick={() => this.handleButton(results)}>
-                  <CardContent style={{ backgroundColor: "#2F4F4F", textAlign: "center", color: "#ededed" }} >
+                  <CardContent style={{ backgroundColor: "rgba(0,0,0,0.02)", textAlign: "center", color: "#000000" }} >
                                           <CardMedia
                                                   style={{
-                          height: "150px",
+                          height: "200px",
                           margin: "auto",
-                          paddingTop: "5%",
+                          //paddingTop: "5%",
                                                       // margin: "1px",
                                                       // padding: "auto",
                                                       borderRadius: "8px",
